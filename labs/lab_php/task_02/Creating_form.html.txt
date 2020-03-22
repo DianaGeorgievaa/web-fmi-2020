@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	 <title>Creating a form exercise</title>
+  </head>
+  <body>
+  <h1>Добавяне на избираема дисциплина</h1>
+    <form method="post" action="/Form_validation.php">
+      <label for="course-title">Име на курс</label>
+      <input type="text" id="course-title" name="title">
+
+      <label for="course-teacher">Преподавател</label>
+      <input type="text "id="course-teacher" name="teacher">  
+
+      <label for="course-description">Описание</label>
+      <input type="text "id="course-description" name="description">  
+
+      <label for="course-group">Група</label>
+      <select id="course-group" name="group">
+        <option value="1">М</option>
+        <option value="2" selected >ПМ</option>
+        <option value="3">ОКН</option>
+        <option value="4">ЯКН</option>
+      </select>
+
+      <label for="course-credits">Кредити</label>
+      <input type="number "id="course-credits" name="credits">  
+
+       <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
