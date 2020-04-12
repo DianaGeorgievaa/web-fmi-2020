@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>
+        Регистрационна форма
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="user-panel">
+        <h1>Потребителски панел</h1>
+        <p>За да се запишете за курс създайте нов акаунт или влезте в съществуващ такъв.</p>
+        <form class="registration">
+            <legend>РЕГИСТРАЦИЯ</legend>
+            <input type="text" class="input-field" name=username placeholder="Потребителско име" />
+            <input type="email" class="input-field" name=email placeholder="E-mail" />
+            <input type="password" class="input-field" name=password placeholder="Парола" />
+            <input type="password" class="input-field" name=confirmed-password placeholder="Потвърди паролата" />
+            <input type="submit" id="registration-button" name="register" value="Регистрирай се" />
+        </form>
+        <form class="login-panel">
+            <legend>ВХОД</legend>
+            <input type="text" class="input-field" name=username placeholder="Потребителско име" />
+            <input type="password" class="input-field" name=password placeholder="Парола" />
+            <input type="checkbox" value="remember-me" id="remember-me" />
+            <label for="remember-me">Запомняне?</label>
+            <input type="submit" id="login-button" name="login" value="Влез">
+            <a href="#" target="_blank">Забравена парола</a>
+        </form>
+    </div>
+</body>
+
+</html>

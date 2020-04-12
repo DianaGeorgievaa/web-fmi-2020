@@ -1,0 +1,132 @@
+.user-panel {
+    font-family: Verdana, Geneva, sans-serif;
+    border: 1px solid;
+    background-color: #f1f1f1;
+    width: 600px;
+    height: 340px;
+}
+
+h1 {
+    color: #003366;
+    font-size: 20px;
+}
+
+legend {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.registration>legend {
+    color: #003366;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+}
+
+legend,
+h1,
+p {
+    text-indent: 15px;
+}
+
+.input-field {
+    margin: 8px 0px 5px 16px;
+    height: 25px;
+    width: 240px;
+}
+
+.registration,
+.login-panel {
+    float: left;
+    width: 280px;
+    height: 235px;
+}
+
+#registration-button {
+    margin-left: 130px;
+    border: 2px solid #003366;
+    color: #003366;
+    font-weight: bold;
+    height: 25px;
+    width: 130px;
+}
+
+#registration-button:hover {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.login-panel {
+    background-color: #003366;
+    margin-left: 20px;
+}
+
+.login-panel>legend {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#login-button {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #003366;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-weight: bold;
+    width: 100px;
+    height: 25px;
+}
+
+#login-button:hover {
+    background-color: #ffffff;
+    color: #003366;
+}
+
+.login-panel>a {
+    color: #ffffff;
+    font-size: 10px;
+    margin-left: 164px;
+}
+
+.login-panel>label {
+    color: #ffffff;
+    padding-left: 40px;
+    position: relative;
+    font-size: 12px;
+}
+
+.login-panel>input[type="checkbox"] {
+    display: none;
+}
+
+.login-panel>label::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #ffffff;
+    left: 0;
+    margin: 7px 0px 0px 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.login-panel>label::after {
+    left: 19px;
+    top: 1px;
+    position: absolute;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    transform: rotate(-45deg);
+    width: 8px;
+    height: 5px;
+}
+
+.login-panel>input[type="checkbox"]+label::after {
+    content: none;
+}
+
+.login-panel>input[type="checkbox"]:checked+label::after {
+    content: "";
+}
