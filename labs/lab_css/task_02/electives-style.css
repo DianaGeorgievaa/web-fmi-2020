@@ -1,0 +1,99 @@
+.all-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #97bf0e;
+  margin: 0px;
+}
+
+.course-info {
+  font-style: italic;
+}
+
+.button-shape {
+  border: 1px solid #c3c3c2;
+  border-radius: 10px;
+  height: 30px;
+}
+
+button[name="login"],
+button[name="registration"] {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.menu-item {
+  height: 30px;
+  padding-top: 15px;
+}
+
+.menu-item > a {
+  padding-left: 10px;
+}
+
+.active {
+  background-color: #97bf0e;
+  color: #ffffff;
+}
+
+.buttons-operation {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.comment-sender {
+  color: #1e90ff;
+}
+
+.comment-date {
+  font-size: small;
+}
+
+textarea {
+  width: 800px;
+  height: 70px;
+  border-radius: 8px;
+  border: 1px solid #c3c3c2;
+  resize: none;
+  padding: 15px;
+}
+
+.elective-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+}
+
+.button-color {
+  background-color: #97bf0e;
+  color: #ffffff;
+}
+
+button[name="cancel"] {
+  background-color: #ffffff;
+  color: #97bf0e;
+  border-color: #97bf0e;
+}
