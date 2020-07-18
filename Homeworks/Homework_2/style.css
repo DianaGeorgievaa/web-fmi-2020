@@ -1,0 +1,45 @@
+form {
+  width: 230px;
+}
+
+legend {
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: none;
+}
+
+p {
+  width: 400px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+}
+
+#photo {
+  margin-left: 10px;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 206px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+textarea:invalid {
+  border-color: #ff0000;
+}
+
+textarea:valid {
+  border-color: #dcdcdc;
+}
+
+input[name="submit"] {
+  margin-left: 200px;
+  margin-top: 10px;
+}

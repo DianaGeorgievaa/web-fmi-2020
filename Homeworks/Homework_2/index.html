@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Diana Georgieva 62162</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formValidation.js" defer></script>
+</head>
+
+<body>
+    <form method="post" action="index.php" onsubmit="return isFormValid()" enctype="multipart/form-data">
+        <legend>Candidate form</legend>
+        <div class="container">
+            <input type="text" id="firstname" name="firstname" onfocusout="isFirstnameValid()" placeholder="First name"
+                required />
+            <p id="firstnameError"></p>
+        </div>
+        <div class="container">
+            <input type="text" id="lastname" name="lastname" placeholder="Last name" onfocusout="isLastnameValid()"
+                required />
+            <p id="lastnameError"></p>
+        </div>
+        <div class="container">
+            <input type="number" id="course" name="course" min="1" max="6" placeholder="Course"
+                onfocusout="isCourseValid()" required />
+            <p id="courseError"></p>
+        </div>
+        <div class="container">
+            <input type="text" id="specialty" name="specialty" placeholder="Specialty" onfocusout="isSpecialtyValid()"
+                required />
+            <p id="specialtyError"></p>
+        </div>
+        <div class="container">
+            <input type="text" id="faculty_number" name="faculty_number" placeholder="Faculty number"
+                onfocusout=isFacultyNumberValid() required />
+            <p id="facultyNumberError"></p>
+        </div>
+        <div class="container">
+            <input type="number" id="group" name="group" min="1" max="10" placeholder="Group"
+                onfocusout="isGroupValid()" required />
+            <p id="groupError"></p>
+        </div>
+        <input type="text" id="birth_date" name="birth_date" min="1920-12-31" max="2002-12-31"
+            onfocus="(this.type='date')" onchange="showZodiacSign()" placeholder="Date of birth" required />
+        <input type="text" id="zodiac_sign" name="zodiac_sign" placeholder="Zodiac" readonly></input>
+        <input type="url" id="hyperlink" name="hyperlink" placeholder="Link to social site" />
+        <div class="container">
+            <label for="img">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" placeholder="Photo" required />
+        </div>
+        <textarea id="motivation" name="motivation" rows="10" cols="80" minlength="30" maxlength="1024"
+            placeholder="Motivation for candidate..." required></textarea>
+        <input type="submit" name="submit" value="Send candidate" />
+    </form>
+</body>
+
+</html>
