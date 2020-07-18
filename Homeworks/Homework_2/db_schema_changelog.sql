@@ -1,5 +1,3 @@
---   For establishing connection with the database I use the "root" username and empty password.
-
 CREATE DATABASE IF NOT EXISTS `62162_Diana_Georgieva` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 USE `62162_Diana_Georgieva`;
