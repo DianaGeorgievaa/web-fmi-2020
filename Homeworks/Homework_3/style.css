@@ -1,0 +1,36 @@
+form {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+legend {
+  margin-bottom: 15px;
+}
+
+p {
+  width: 800px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 850px;
+  margin-top: 5px;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 206px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+input[name="submit"] {
+  margin-left: 40px;
+  width: 100px;
+}
